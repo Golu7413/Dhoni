@@ -46,15 +46,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons =  [[
-            InlineKeyboardButton('⛦ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⛦', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('+ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ', callback_data='owner_info'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ 🫂', callback_data='money_bot')
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', callback_data='money_bot')
             ],[      
             InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇy Wɪᴛʜ Bᴏᴛ 💸', callback_data='dash')
+            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇy Wɪᴛʜ Bᴏᴛ', callback_data='dash')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -94,15 +94,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons =  [[
-            InlineKeyboardButton('⛦ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⛦', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('+ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ', callback_data='owner_info'),
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ 🫂', callback_data='money_bot')
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', callback_data='money_bot')
             ],[      
             InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇy Wɪᴛʜ Bᴏᴛ 💸', callback_data='dash')
+            InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇy Wɪᴛʜ Bᴏᴛ', callback_data='dash')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -595,7 +595,7 @@ async def settings(client, message):
         ]
 
         btn = [[
-            InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'https://t.me/+wQ6XMvJIhQZmYmI1')
+            InlineKeyboardButton('Jᴏɪɴ Gʀᴏᴜᴘ', url=f'https://t.me/+wQ6XMvJIhQZmYmI1')
         ], [
             InlineKeyboardButton("Oᴘᴇɴ Hᴇʀᴇ ↓", callback_data=f"opnsetgrp#{grp_id}"),
             InlineKeyboardButton("Oᴘᴇɴ Iɴ PM ⇲", callback_data=f"opnsetpm#{grp_id}")
