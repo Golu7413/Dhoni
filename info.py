@@ -29,11 +29,11 @@ telethn = TelegramClient("Info", API_ID, API_HASH)
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/7215c7831b4ae88897448.jpg https://telegra.ph/file/34f3bd6b0cda5bb9b0cca.jpg https://telegra.ph/file/724bdd44693500c024ec7.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/ae69d4d44fb4b11cdd641.jpg https://telegra.ph/file/6dbd3eb00028df570bddc.jpg https://telegra.ph/file/b86d42da5467bc7a030d9.jpg https://telegra.ph/file/5dc4ebeaa98edb56dc238.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "")
 NEWGRP = environ.get("NEWGRP", "")
 MELCOW_VID = environ.get("MELCOW_VID", "")
-SPELL_IMG = environ.get("SPELL_IMG", "")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/3fb784eca0db5b6f140da.jpg")
 SP = (environ.get('SP', '')).split()
 
 
@@ -84,7 +84,7 @@ SHORTLINK_API = environ.get('SHORTLINK_API', '')
 VERIFY = bool(environ.get('VERIFY', False))
 # SHORTLINK_URL = environ.get('SHORTLINK_URL', 'http://TinyFy.in')
 # SHORTLINK_API = environ.get('SHORTLINK_API', '5f301bd41650cf7f64b9e7434fef3b7c973918df')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "7")
